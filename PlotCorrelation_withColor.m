@@ -24,7 +24,7 @@ upper=p95(:,1);lower=p95(:,2);
 
 
 
-mea=MAE(X,Y);
+mea=mae(X,Y);
 boundUp=f+mea;
 boundLow=f-mea;
 
