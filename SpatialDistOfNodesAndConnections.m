@@ -1,5 +1,5 @@
 function [LLC,RRC,LRC,LN,RN]=SpatialDistOfNodesAndConnections(mat)
-% this function evaluate the spatial distriution of the significant nodes and edges between hemispheres
+% this function evaluate the spatial distribution of the significant nodes and edges between hemispheres
 %Inputs:  -mat: the matrix of significant connections of dimension [ROI*ROI]:
 %              contains 1 if the connection is significant and 0 otherwise
 %Outputs: -LLC: percentage of the connections within the left hemisphere
@@ -16,6 +16,7 @@ LLC=0;LRC=0;RRC=0;LN=0;RN=0;
 allConn=sum(sum(mat));
 allNodes=[];
 
+%this code was built based on the Brainnetome Atlas where:
 %the nodes with odd values are those in the left hemisphere
 %the nodes with even values are those in the right hemisphere
 
